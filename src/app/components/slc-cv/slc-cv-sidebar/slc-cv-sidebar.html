@@ -1,0 +1,29 @@
+<div class="personal-info">
+	<img [src]="imageUrl()" class="picture" alt="" />
+
+	<div class="name-and-title">
+		@for (x of [].constructor(2); track x; let last = $last) {
+			<div class="name" [attr.data-name]="" [ngClass]="{ 'name-copy': last }">
+				{{ personalInfo().name }}<br />{{ personalInfo().lastName }}
+			</div>
+		}
+
+		<div class="work-title">{{ jobTitle() }}</div>
+	</div>
+
+	<div class="separator"></div>
+
+	<div class="personal-info-sections">
+		@for (item of sideItemsList(); track item) {
+			@switch (item.itemType) {
+				@case (ItemType.A) {
+					<slc-item-a [item]="item"></slc-item-a>
+				}
+
+				@case (ItemType.B) {
+					<slc-item-b [item]="item"></slc-item-b>
+				}
+			}
+		}
+	</div>
+</div>

@@ -1,0 +1,88 @@
+@use "variables";
+
+/* Root elements: :root, html, body; cross rules and variables */
+:root {
+	font-family: Calibri, sans-serif;
+	$hsla: 221;
+
+	--a-hover-bg-color: hsla(#{$hsla}, 100%, 60%, 14%);
+	--accent-color: orange;
+	--box-shadow-1: 4px 4px 0 rgb(0 0 0 / 50%);
+	--gradient-left-color: hsla(#{$hsla}, 35%, 30%, 100%);
+	--gradient-right-color: hsla(#{$hsla}, 40%, 2%, 100%);
+	--image-bg-color: hsla(#{$hsla}, 37%, 20%, 100%);
+	--primary-color: hsla(#{$hsla}, 34%, 32%, 100%);
+	--secondary-color: #f7f7f7;
+}
+
+html {
+	background-color: #212121;
+}
+
+body,
+html,
+* {
+	box-sizing: border-box;
+	letter-spacing: 0.5px;
+	line-height: 110%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Html tags */
+a {
+	color: unset;
+
+	&:hover {
+		background-color: var(--a-hover-bg-color);
+	}
+}
+
+i {
+	font-style: normal; // Overwrites parents font-style because <i> tag will be used for icons
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
+	row-gap: 4px;
+}
+
+/* Custom classes */
+.important {
+	color: variables.$accent-color;
+	font-weight: bold;
+}
+
+.separator {
+	background-color: variables.$secondary-color;
+	height: 5px;
+	width: 100%;
+}
+
+/* Print */
+@media print {
+	@page {
+		margin: 0;
+	}
+
+	body *,
+	.not-printable {
+		visibility: hidden !important;
+	}
+
+	html,
+	body {
+		background: transparent !important;
+		height: 100%;
+		margin: 0 !important;
+		padding: 0 !important;
+		width: 100%;
+	}
+
+	.sheet,
+	.sheet * {
+		visibility: visible !important;
+	}
+}

@@ -1,0 +1,47 @@
+<div class="slc-item-c">
+	@if (item().title; as title) {
+		<slc-item-title
+			[color]="Colors.SECONDARY"
+			[fontSizePx]="18"
+			[itemTitle]="title"
+		></slc-item-title>
+	}
+
+	@if (item().place || period) {
+		<div class="item-content">
+			@if (item().place || period) {
+				<div class="item-subtitle">
+					@if (item().place; as place) {
+						<slc-link-or-text
+							[link]="place.href"
+							[text]="place.text"
+						></slc-link-or-text>
+					}
+					@if (period) {
+						<div [innerHtml]="period"></div>
+					}
+				</div>
+			}
+		</div>
+	}
+
+	@if ((item().descriptionsList | translate).length) {
+		<div class="item-description">
+			<ul>
+				@for (
+					description of item().descriptionsList | translate;
+					track description
+				) {
+					<li [innerHtml]="description"></li>
+				}
+			</ul>
+		</div>
+	}
+
+	@if (item().skillsList?.length) {
+		<slc-chip-list
+			class="item-chips"
+			[chipsList]="item().skillsList"
+		></slc-chip-list>
+	}
+</div>

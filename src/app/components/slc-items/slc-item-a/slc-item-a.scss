@@ -1,0 +1,9 @@
+.slc-item-a {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+
+	.item-description {
+		font-size: 15px;
+	}
+}

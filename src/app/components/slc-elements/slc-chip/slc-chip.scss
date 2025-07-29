@@ -1,0 +1,25 @@
+@use "shadows";
+@use "variables";
+
+.chip {
+	@include shadows.box-shadow-1;
+
+	$border-size: 1px;
+
+	background-color: variables.$primary-color;
+	border: $border-size solid rgb(0 0 0 / 50%);
+	border-radius: 24px;
+	column-gap: 5px;
+	display: flex;
+	font-size: 12px;
+	padding: 4px 9px 5px;
+	width: fit-content;
+
+	&.starred {
+		border: $border-size solid variables.$accent-color;
+	}
+
+	.starred-icon {
+		color: variables.$accent-color;
+	}
+}

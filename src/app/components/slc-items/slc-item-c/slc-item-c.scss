@@ -1,0 +1,21 @@
+.slc-item-c {
+	display: flex;
+	flex-direction: column;
+	margin-inline: 12px;
+	row-gap: 12px;
+
+	.item-content {
+		.item-subtitle {
+			display: flex;
+			flex-direction: column;
+			font-size: 14px;
+			row-gap: 2px;
+			text-transform: uppercase;
+		}
+	}
+
+	.item-description {
+		margin-left: -12px;
+		font-size: 12px;
+	}
+}

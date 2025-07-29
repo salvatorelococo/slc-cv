@@ -1,0 +1,15 @@
+/* Colors */
+$accent-color: var(--accent-color);
+$image-bg-color: var(--image-bg-color);
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+
+$background-gradient: linear-gradient(
+	150deg,
+	var(--gradient-left-color),
+	var(--gradient-right-color)
+);
+
+/* Dimensions */
+$height: 1122.6px;
+$width: 796px;

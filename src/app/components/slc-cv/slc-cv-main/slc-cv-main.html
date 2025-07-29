@@ -1,0 +1,31 @@
+<div class="content main-content">
+	@for (section of sectionsList(); track section) {
+		<div class="section-type-b">
+			<div class="section-title">
+				@if (section.title.icon; as icon) {
+					<i [class]="icon"></i>
+				}
+
+				<span [innerHTML]="section.title.text | translate"></span>
+			</div>
+
+			<div class="slc-row">
+				@for (item of getItemsList(section); track item) {
+					<div [ngClass]="getItemColumnClass(item)">
+						@switch (item.itemType) {
+							@case (ItemType.C) {
+								<slc-item-c [item]="item"></slc-item-c>
+							}
+
+							@case (ItemType.D) {
+								<slc-item-d [item]="item"></slc-item-d>
+							}
+						}
+					</div>
+				}
+
+				<slc-chip-list [chipsList]="getSkills(section)"></slc-chip-list>
+			</div>
+		</div>
+	}
+</div>

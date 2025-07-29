@@ -1,0 +1,16 @@
+<div class="hue-wrapper">
+	<input
+		(keydown)="onKeyDown($event)"
+		type="range"
+		min="0"
+		max="360"
+		[value]="hue"
+		(input)="onHueChange($event)"
+	/>
+	<div
+		class="hue-preview"
+		[style.background]="
+			'hsl(' + hue + ', ' + saturation + '%, ' + lightness + '%)'
+		"
+	></div>
+</div>

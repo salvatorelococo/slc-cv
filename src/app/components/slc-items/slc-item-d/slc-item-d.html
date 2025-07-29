@@ -1,0 +1,12 @@
+<div class="slc-item-d">
+	@if (item().title; as title) {
+		<slc-item-title
+			[color]="Colors.SECONDARY"
+			[itemTitle]="title"
+		></slc-item-title>
+	}
+
+	@if (item().subtitle | translate; as subtitle) {
+		<div class="item-subtitle" [innerHtml]="subtitle"></div>
+	}
+</div>

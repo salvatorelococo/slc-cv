@@ -1,0 +1,16 @@
+<div class="fab-container">
+	<div class="fab-options" [class.open]="isOpen">
+		@for (option of options(); track option) {
+			<button (click)="onOptionClick(option.action)">
+				@if (option.icon) {
+					<i [class]="option.icon"></i>
+				}
+				<span [innerHTML]="option.label | translate"></span>
+			</button>
+		}
+	</div>
+
+	<button class="fab-main" (click)="toggle()">
+		<i [class]="isOpen ? RemixIcon.RiCloseFill : RemixIcon.RiAddFill"></i>
+	</button>
+</div>

@@ -1,0 +1,20 @@
+<div class="sheet">
+	<!-- Body -->
+	<div class="body">
+		<!-- Side -->
+		<slc-cv-sidebar
+			[imageUrl]="cv.imageUrl"
+			[jobTitle]="cv.jobTitle | translate"
+			[personalInfo]="cv.personalInfo"
+			[sideItemsList]="cv.sideItemsList"
+		></slc-cv-sidebar>
+
+		<!-- Main -->
+		<slc-cv-main [sectionsList]="cv.sectionsList"></slc-cv-main>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+		{{ privacyStatement | translate }}
+	</div>
+</div>

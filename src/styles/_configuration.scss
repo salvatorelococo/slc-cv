@@ -1,0 +1,19 @@
+body {
+	.icon-alt {
+		display: none;
+	}
+
+	&.no-shadows {
+		--box-shadow-1: none;
+	}
+
+	&.no-icons .sheet {
+		i {
+			display: none;
+		}
+
+		.icon-alt {
+			display: revert;
+		}
+	}
+}

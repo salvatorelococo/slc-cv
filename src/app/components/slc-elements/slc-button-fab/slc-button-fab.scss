@@ -1,0 +1,57 @@
+@use "variables";
+@use "sass:color";
+
+.fab-container {
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+	.fab-main {
+		background: variables.$primary-color;
+		border: none;
+		border-radius: 50%;
+		box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+		color: variables.$secondary-color;
+		cursor: pointer;
+		font-size: 24px;
+		height: 56px;
+		transition: transform 0.3s ease;
+		width: 56px;
+	}
+
+	.fab-options {
+		display: flex;
+		flex-direction: column;
+		opacity: 0;
+		pointer-events: none;
+		transform: translateY(20px);
+		transition:
+			opacity 0.2s ease,
+			transform 0.2s ease;
+
+		&.open {
+			opacity: 1;
+			pointer-events: auto;
+			transform: translateY(0);
+		}
+
+		button {
+			background: variables.$primary-color;
+			border: none;
+			border-radius: 8px;
+			box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+			color: variables.$secondary-color;
+			column-gap: 4px;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 8px;
+			padding: 10px 16px;
+
+			&:hover {
+				filter: brightness(90%);
+			}
+		}
+	}
+}

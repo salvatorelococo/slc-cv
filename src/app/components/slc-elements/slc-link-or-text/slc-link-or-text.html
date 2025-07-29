@@ -1,0 +1,6 @@
+@if (link()) {
+	<a [href]="link()" [innerHTML]="text()"></a>
+}
+@if (!link()) {
+	<span [innerHTML]="text()"></span>
+}

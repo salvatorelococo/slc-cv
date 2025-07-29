@@ -1,0 +1,19 @@
+@if (itemTitle(); as title) {
+	@if (title.icon || title.text | translate) {
+		<div
+			class="slc-item-title"
+			[ngClass]="colorClass()"
+			[ngStyle]="{
+				color: color(),
+				fontSize: fontSize(),
+			}"
+		>
+			@if (title.icon; as icon) {
+				<i [ngClass]="icon"></i>
+			}
+			@if (title.text | translate; as text) {
+				<div [innerHtml]="text"></div>
+			}
+		</div>
+	}
+}

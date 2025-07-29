@@ -1,0 +1,18 @@
+.slc-item-d {
+	position: relative;
+
+	.item-title {
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.item-subtitle {
+		$left-offset: 45px;
+
+		font-size: 12px;
+		margin-left: $left-offset;
+		text-transform: uppercase;
+		width: calc(100% - $left-offset);
+	}
+}

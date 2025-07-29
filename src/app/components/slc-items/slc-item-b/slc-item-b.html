@@ -1,0 +1,25 @@
+<div class="slc-item-b">
+	@if (item().title; as title) {
+		<slc-item-title [fontSizePx]="18" [itemTitle]="title"></slc-item-title>
+	}
+
+	@if (valuesList()) {
+		<div class="item-description slc-row-small-gap">
+			@for (value of valuesList(); track value) {
+				<div
+					class="item-description-value"
+					[ngClass]="value.columns ? 'col-' + value.columns : ''"
+				>
+					@if (value.icon) {
+						<i [ngClass]="value.icon"></i>
+					}
+					<slc-link-or-text
+						class="item-description-text"
+						[link]="value.href"
+						[text]="(value.text | translate) || '&nbsp;'"
+					></slc-link-or-text>
+				</div>
+			}
+		</div>
+	}
+</div>

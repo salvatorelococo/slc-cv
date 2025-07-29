@@ -1,0 +1,25 @@
+@use "variables";
+
+:host:empty {
+	display: none;
+}
+
+.slc-item-title {
+	column-gap: 4px;
+	display: flex;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	&,
+	&::ng-deep * {
+		letter-spacing: 1px;
+	}
+
+	&-primary {
+		color: variables.$primary-color;
+	}
+
+	&-secondary {
+		color: variables.$secondary-color;
+	}
+}

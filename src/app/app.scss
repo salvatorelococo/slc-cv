@@ -1,0 +1,15 @@
+:host {
+	.hue-selector {
+		bottom: 32px;
+		left: 32px;
+		position: fixed;
+		z-index: 1;
+	}
+
+	.fab-button {
+		bottom: 32px;
+		position: fixed;
+		right: 32px;
+		z-index: 1;
+	}
+}

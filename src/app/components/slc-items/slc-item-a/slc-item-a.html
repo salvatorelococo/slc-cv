@@ -1,0 +1,9 @@
+<div class="slc-item-a">
+	@if (item().title; as title) {
+		<slc-item-title [fontSizePx]="18" [itemTitle]="title"></slc-item-title>
+	}
+
+	@if (item().description | translate; as description) {
+		<div class="item-description" [innerHTML]="description"></div>
+	}
+</div>

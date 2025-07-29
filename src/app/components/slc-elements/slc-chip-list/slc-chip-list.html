@@ -1,0 +1,7 @@
+@if (chips()?.length) {
+	<div class="chips-list">
+		@for (chip of chips(); track chip) {
+			<slc-chip [chip]="chip"></slc-chip>
+		}
+	</div>
+}

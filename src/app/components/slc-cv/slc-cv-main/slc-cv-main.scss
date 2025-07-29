@@ -1,0 +1,39 @@
+@use "shadows";
+@use "variables";
+
+.content {
+	display: flex;
+	flex-direction: column;
+	max-height: 100%;
+	max-width: 100%;
+	row-gap: 40px;
+	width: 100%;
+
+	.section-type-b {
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+
+		.section-title {
+			@include shadows.box-shadow-1;
+
+			align-items: center;
+			background-color: variables.$primary-color;
+			color: variables.$secondary-color;
+			column-gap: 8px;
+			display: flex;
+			font-size: 16px;
+			font-weight: bold;
+			padding: 8px 16px;
+			text-transform: uppercase;
+
+			i {
+				font-size: 120%;
+			}
+
+			span {
+				letter-spacing: 1px;
+			}
+		}
+	}
+}

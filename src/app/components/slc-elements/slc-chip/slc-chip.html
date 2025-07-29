@@ -1,0 +1,9 @@
+<div class="chip" [ngClass]="{ starred: chip()?.starred }">
+	@if (chip()?.icon) {
+		<i [class]="chip()?.icon"></i>
+	}
+	<span>{{ chip()?.text | translate }}</span>
+	@if (chip()?.starred) {
+		<i [ngClass]="[RemixIcon.RiStarSFill, 'starred-icon']"></i>
+	}
+</div>
