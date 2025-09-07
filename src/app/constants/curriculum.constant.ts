@@ -226,12 +226,12 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 						},
 						descriptionsList: {
 							[Locale.EN]: [
-								'Hands-on training with Jeopardy-style Capture The Flag (CTF) challenges covering various areas of cybersecurity.',
-								'Selected for and participated in the national Attack-Defence competition held in October 2020.',
+								'Hands-on training with <span class="important">Jeopardy-style Capture The Flag (CTF) challenges</span> covering various areas of cybersecurity.',
+								'Selected for and participated in the <span class="important">national Attack-Defence competition</span> held in October 2020.',
 							],
 							[Locale.IT]: [
-								'Svolgimento di sfide Capture The Flag di tipo Jeopardy riguardanti diverse categorie della sicurezza informatica.',
-								"Sono stato selezionato per partecipare ed ho partecipato alla relativa competizione nazionale, di tipo Attack-Defence, svoltasi nell'Ottobre 2020.",
+								'Svolgimento di <span class="important">sfide Capture The Flag (CTF) di tipo Jeopardy</span> riguardanti diverse categorie della sicurezza informatica.',
+								"Sono stato selezionato per partecipare ed ho partecipato alla relativa <span class='important'>competizione nazionale, di tipo Attack-Defence</span>, svoltasi nell'Ottobre 2020.",
 							],
 						},
 						from: '2020-03',
