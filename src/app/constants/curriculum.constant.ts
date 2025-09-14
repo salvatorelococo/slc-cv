@@ -323,6 +323,7 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 								starred: true,
 								itemType: ItemType.E,
 							},
+							{ text: { [Locale.EN]: 'Flutter' }, itemType: ItemType.E },
 							{ text: { [Locale.EN]: 'jQuery' }, itemType: ItemType.E },
 							{ text: { [Locale.EN]: 'React' }, itemType: ItemType.E },
 							{
@@ -352,6 +353,7 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 								itemType: ItemType.E,
 							},
 							{ text: { [Locale.EN]: 'C' }, itemType: ItemType.E },
+							{ text: { [Locale.EN]: 'Dart' }, itemType: ItemType.E },
 							{ text: { [Locale.EN]: 'Java' }, itemType: ItemType.E },
 							{ text: { [Locale.EN]: 'Python' }, itemType: ItemType.E },
 						],
