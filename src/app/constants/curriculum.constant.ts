@@ -20,8 +20,8 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 	const cv: CurriculumVitae = {
 		imageUrl: '/salvatore-lococo.png',
 		jobTitle: {
-			[Locale.EN]: 'Lead frontend developer',
-			[Locale.IT]: 'Lead frontend developer',
+			[Locale.EN]: 'Senior IT Consultant',
+			[Locale.IT]: 'Consulente IT Senior',
 		},
 		personalInfo: {
 			birthDate: '1998-04-01',
@@ -43,16 +43,115 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 					{
 						title: {
 							text: {
-								[Locale.EN]: 'Consultant - FE Web Dev & Team Leader',
-								[Locale.IT]: 'Consulente - Sviluppatore FE Web e Team Leader',
+								[Locale.EN]: 'Senior IT Consultant',
+								[Locale.IT]: 'Consulente IT Senior',
 							},
 						},
 						place: {
-							href: 'https://www.reply.com/iriscube-reply/it',
-							text: 'Iriscube Reply x BPER Banca',
+							href: 'https://www.reply.com/en/ai-powered-software-engineering/silicon-shoring',
+							text: 'Silicon Shoring Reply x BPER Banca',
 						},
-						from: '2022-01',
+						from: '2026-03',
 						to: 'Present',
+						descriptionsList: {
+							[Locale.EN]: [
+								"<span class='important'>Direct contact with the client</span> for planning activities, defining timelines, and technical discussions on proposed and future solutions..",
+								"Technical supervision of a <span class='important'>team of 8-9 people</span>, adhering to the objectives and deadlines agreed upon with the client.",
+								"<span class='important'>Responsible for the web channel</span> as a technical and decision-making point of reference for the client.",
+							],
+							[Locale.IT]: [
+								"<span class='important'>Interfaccia diretta con il cliente</span> per pianificazione delle attività, definizione delle tempistiche e confronto tecnico su soluzioni proposte e in proposta.",
+								"Supervisione tecnica di un <span class='important'>team di 8-9 persone</span> nel rispetto degli obiettivi e delle scadenze concordate con il cliente.",
+								"<span class='important'>Responsabile del canale web</span> come riferimento tecnico e decisionale verso il cliente.",
+							],
+						},
+						skillsList: [
+							{
+								text: {
+									[Locale.EN]: 'Angular 16',
+								},
+								itemType: ItemType.E,
+								starred: true,
+							},
+							{
+								text: {
+									[Locale.EN]: 'Microsoft PowerPoint',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								text: {
+									[Locale.EN]: 'Jira',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								text: {
+									[Locale.EN]: 'Gantt',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								starred: true,
+								text: {
+									[Locale.EN]: 'Git',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								starred: true,
+								text: {
+									[Locale.EN]: 'Angular custom libraries',
+									[Locale.IT]: 'Librerie Angular custom',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								text: {
+									[Locale.EN]: 'Jenkins (build & deploy)',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								text: {
+									[Locale.EN]: 'Kibana (discover)',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								text: {
+									[Locale.EN]: 'Microsoft Excel',
+								},
+								itemType: ItemType.E,
+							},
+						],
+						itemType: ItemType.C,
+					},
+					{
+						title: {
+							text: {
+								[Locale.EN]: 'IT Consultant - Team Leader / FE Web Developer',
+								[Locale.IT]: 'Consulente IT - Team Leader / Sviluppatore Web',
+							},
+						},
+						info: [
+							{
+								place: {
+									href: 'https://www.reply.com/en/ai-powered-software-engineering/silicon-shoring',
+									text: 'Silicon Shoring Reply x BPER Banca',
+								},
+								from: '2025-03',
+								to: '2026-02',
+							},
+							{
+								place: {
+									href: 'https://www.reply.com/iriscube-reply/it',
+									text: 'Iriscube Reply x BPER Banca',
+								},
+								from: '2022-01',
+								to: '2025-02',
+							},
+						],
 						descriptionsList: {
 							[Locale.EN]: [
 								'Technical lead and supervisor for the development of the Internet Banking application, built with <span class="important">Angular 16</span> and based on a <span class="important">micro-frontend architecture</span>, including <span class="important">custom libraries</span>.',
@@ -102,18 +201,18 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 							},
 							{
 								text: {
-									[Locale.EN]: 'Gantt',
+									[Locale.EN]: 'Microsoft Excel',
 								},
 								itemType: ItemType.E,
 							},
 							{
 								text: {
-									[Locale.EN]: 'Microsoft Excel',
+									[Locale.EN]: 'Gantt',
 								},
 								itemType: ItemType.E,
 							},
 						],
-						itemType: ItemType.C,
+						itemType: ItemType.F,
 					},
 				],
 			},
@@ -410,7 +509,15 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 						skillsList: [
 							{ text: { [Locale.EN]: 'Gantt' }, itemType: ItemType.E },
 							{
+								text: { [Locale.EN]: 'Jira' },
+								itemType: ItemType.E,
+							},
+							{
 								text: { [Locale.EN]: 'Microsoft Excel' },
+								itemType: ItemType.E,
+							},
+							{
+								text: { [Locale.EN]: 'Microsoft PowerPoint' },
 								itemType: ItemType.E,
 							},
 							{ text: { [Locale.EN]: 'Notion' }, itemType: ItemType.E },
@@ -476,8 +583,8 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 							},
 						},
 						subtitle: {
-							[Locale.EN]: 'Intermediate<br />(Cambridge B2 First)',
-							[Locale.IT]: 'Intermedio<br />(Cambridge B2 First)',
+							[Locale.EN]: 'Intermediate (B2)',
+							[Locale.IT]: 'Intermedio (B2)',
 						},
 						itemType: ItemType.D,
 					},
@@ -585,7 +692,7 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 			},
 			{
 				columns: 6,
-				href: 'https://www.chess.com/member/slcxx98',
+				// href: 'https://www.chess.com/member/slcxx98',
 				icon: RemixIcon.RiChessFill,
 				text: {
 					[Locale.EN]: 'Chess',

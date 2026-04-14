@@ -32,6 +32,7 @@ export enum ItemType {
 	C,
 	D,
 	E,
+	F,
 }
 
 export interface ItemA extends BaseItem {
@@ -54,13 +55,10 @@ export interface Value {
 
 export interface Section {
 	title: Title;
-	itemsList: (ItemC | ItemD | Skill)[];
+	itemsList: (ItemC | ItemD | ItemF | Skill)[];
 }
 
-export interface ItemC extends BaseItem {
-	place?: Place;
-	from?: string; // Not translatable
-	to?: string; // Not translatable
+export interface ItemC extends BaseItem, WorkInfo {
 	descriptionsList?: LocalizedData<(string | SafeHtml)[]>;
 	skillsList?: Skill[];
 	readonly itemType: ItemType.C;
@@ -82,6 +80,19 @@ export interface ItemD extends BaseItem {
 	columns?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12; // Not translatable
 	subtitle?: LocalizedData<string | SafeHtml>;
 	readonly itemType: ItemType.D;
+}
+
+export interface ItemF extends BaseItem {
+	info?: WorkInfo[];
+	descriptionsList?: LocalizedData<(string | SafeHtml)[]>;
+	skillsList?: Skill[];
+	readonly itemType: ItemType.F;
+}
+
+export interface WorkInfo {
+	place?: Place;
+	from?: string; // Not translatable
+	to?: string; // Not translatable
 }
 
 export enum Locale {

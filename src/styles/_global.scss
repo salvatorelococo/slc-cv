@@ -3,12 +3,12 @@
 /* Root elements: :root, html, body; cross rules and variables */
 :root {
 	font-family: Calibri, sans-serif;
-	$hsla: 221;
+	$hsla: 21;
 
 	--a-hover-bg-color: hsla(#{$hsla}, 100%, 60%, 14%);
 	--accent-color: orange;
 	--box-shadow-1: 4px 4px 0 rgb(0 0 0 / 50%);
-	--gradient-left-color: hsla(#{$hsla}, 35%, 30%, 100%);
+	--gradient-left-color: hsla(#{$hsla}, 35%, 20%, 100%);
 	--gradient-right-color: hsla(#{$hsla}, 40%, 2%, 100%);
 	--image-bg-color: hsla(#{$hsla}, 37%, 20%, 100%);
 	--primary-color: hsla(#{$hsla}, 34%, 32%, 100%);
