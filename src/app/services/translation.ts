@@ -5,7 +5,7 @@ import { Locale } from '../models/curriculum.model';
 	providedIn: 'root',
 })
 export class TranslationService {
-	private _locale: Locale = Locale.EN;
+	private _locale: Locale = Locale.IT;
 
 	public get locale(): Locale {
 		return this._locale;
