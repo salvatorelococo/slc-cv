@@ -607,9 +607,9 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 		},
 		description: {
 			[Locale.EN]:
-				'Passionate about scripting since childhood &ndash; never just a tinkerer, but someone who strives to understand and truly master technologies.<br /><br />Highly competitive, determined, and open to challenges.<br /><br />IT consultant with experience in front-end development and technical project management.',
+				'IT Consultant with solid experience in front-end development and the technical and administrative management of projects.<br /><br />Passionate about technology from an early age, I have always aimed to fully master tools and methodologies. I am a determined and proactive individual, with a strong inclination to take on new challenges.',
 			[Locale.IT]:
-				'Appassionato di script fin da bambino, non sono mai stato un semplice smanettone. Mi piace comprendere e fare mio.<br /><br />Sono una persona molto competitiva, determinata e aperta alle sfide.<br /><br />Consulente informatico con esperienza in ambito di sviluppo front-end e gestione tecnica di progetti.',
+				'Consulente IT con consolidata esperienza nello sviluppo front-end e nella gestione tecnica e amministrativa di progetti.<br /><br />Appassionato di tecnologia fin dalla giovane età, ho sempre puntato a padroneggiare gli strumenti e le metodologie nel loro complesso. Sono una persona determinata e propensa ad affrontare nuove sfide con spirito proattivo.',
 		},
 		itemType: ItemType.A,
 	};
@@ -618,7 +618,6 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 		title: {
 			text: {
 				[Locale.EN]: 'Soft skills',
-				[Locale.IT]: 'Competenze trasversali',
 			},
 		},
 		sortList: true,
