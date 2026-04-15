@@ -130,8 +130,8 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 					{
 						title: {
 							text: {
-								[Locale.EN]: 'IT Consultant - Team Leader / FE Web Developer',
-								[Locale.IT]: 'Consulente IT - Team Leader / Sviluppatore Web',
+								[Locale.EN]: 'IT Consultant - Team Leader',
+								[Locale.IT]: 'Consulente IT - Team Leader',
 							},
 						},
 						info: [
@@ -148,7 +148,7 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 									href: 'https://www.reply.com/iriscube-reply/it',
 									text: 'Iriscube Reply x BPER Banca',
 								},
-								from: '2022-01',
+								from: '2024-03',
 								to: '2025-02',
 							},
 						],
@@ -168,7 +168,7 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 							{
 								starred: true,
 								text: {
-									[Locale.EN]: 'Angular 11, 14, 16',
+									[Locale.EN]: 'Angular 14, 16',
 								},
 								itemType: ItemType.E,
 							},
@@ -208,6 +208,59 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 							{
 								text: {
 									[Locale.EN]: 'Gantt',
+								},
+								itemType: ItemType.E,
+							},
+						],
+						itemType: ItemType.F,
+					},
+					{
+						title: {
+							text: {
+								[Locale.EN]: 'IT Consultant - Web Developer',
+								[Locale.IT]: 'Consulente IT - Sviluppatore Web',
+							},
+						},
+						info: [
+							{
+								place: {
+									href: 'https://www.reply.com/iriscube-reply/it',
+									text: 'Iriscube Reply x BPER Banca',
+								},
+								from: '2022-01',
+								to: '2024-02',
+							},
+						],
+						descriptionsList: {
+							[Locale.EN]: [
+								'Technical lead and supervisor for the development of the Internet Banking application, built with <span class="important">Angular 16</span> and based on a <span class="important">micro-frontend architecture</span>, including <span class="important">custom libraries</span>.',
+								'Management of <span class="important">branching/versioning strategies</span>, <span class="important">merge requests</span> from external vendors, and release processes via <span class="important">Jenkins</span>.',
+								'<span class="important">Task analysis and planning</span>, <span class="important">resource management</span>, <span class="important">budget estimation</span> and main point of contact for the client regarding the web channel.',
+							],
+							[Locale.IT]: [
+								"Supervisore e riferimento tecnico per lo sviluppo su applicativo dell'Internet Banking, realizzato in <span class='important'>Angular 16</span> con <span class='important'>architettura a micro-frontend</span>, e sulle principali <span class='important'>librerie custom</span>.",
+								'Gestione delle <span class="important">strategie di branching e di versioning</span>, delle <span class="important">merge request</span> da fornitori esterni e dei rilasci tramite piattaforma <span class="important">Jenkins</span>.',
+								'<span class="important">Analisi e pianificazione delle attività</span>, <span class="important">gestione delle risorse</span>, <span class="important">realizzazione di stime economiche</span> e riferimento per il cliente sul canale web.',
+							],
+						},
+						skillsList: [
+							{
+								starred: true,
+								text: {
+									[Locale.EN]: 'Angular 11, 14',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								starred: true,
+								text: {
+									[Locale.EN]: 'Git',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								text: {
+									[Locale.EN]: 'Jenkins (build & deploy)',
 								},
 								itemType: ItemType.E,
 							},
