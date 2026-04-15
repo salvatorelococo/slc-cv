@@ -10,7 +10,7 @@
 	--box-shadow-1: 4px 4px 0 rgb(0 0 0 / 50%);
 	--gradient-left-color: hsla(#{$hsla}, 35%, 20%, 100%);
 	--gradient-right-color: hsla(#{$hsla}, 40%, 2%, 100%);
-	--image-bg-color: hsla(#{$hsla}, 37%, 20%, 100%);
+	--image-bg-color: hsla(#{$hsla}, 37%, 16%, 100%);
 	--primary-color: hsla(#{$hsla}, 34%, 32%, 100%);
 	--secondary-color: #f7f7f7;
 }
@@ -24,7 +24,7 @@ html,
 * {
 	box-sizing: border-box;
 	letter-spacing: 0.5px;
-	line-height: 111%;
+	line-height: 120%;
 	margin: 0;
 	padding: 0;
 }
