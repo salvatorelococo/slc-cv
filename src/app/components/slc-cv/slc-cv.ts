@@ -101,11 +101,6 @@ export class SlcCv implements AfterViewInit {
 				// Update scroll height value
 				scrollHeight = content.scrollHeight;
 			}
-
-			// Remove the element if empty
-			if (!firstNewPageItem.hasChildNodes()) {
-				content.removeChild(firstNewPageItem);
-			}
 		}
 
 		// Second iteration
@@ -177,7 +172,7 @@ export class SlcCv implements AfterViewInit {
 
 			// Check if the last element of the main page is a title; if so move it to the new one.
 			const lastSecondLevelChild = content.lastChild?.lastChild as HTMLElement;
-			if (lastSecondLevelChild.classList?.contains('section-title')) {
+			if (lastSecondLevelChild?.classList?.contains('section-title')) {
 				const parent = lastSecondLevelChild.parentNode;
 				parent?.removeChild(lastSecondLevelChild);
 
@@ -198,6 +193,15 @@ export class SlcCv implements AfterViewInit {
 		for (const el of cloneContent) {
 			if (el.hasChildNodes()) {
 				newFirstItem?.appendChild(el);
+			}
+		}
+
+		// Remove the element if empty
+		if (firstNewPageItem && !firstNewPageItem.hasChildNodes()) {
+			try {
+				content.removeChild(firstNewPageItem);
+			} catch {
+				// Do nothing - it has already been moved or deleted
 			}
 		}
 
