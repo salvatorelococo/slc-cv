@@ -55,7 +55,7 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 						to: 'Present',
 						descriptionsList: {
 							[Locale.EN]: [
-								"<span class='important'>Direct contact with the client</span> for planning activities, defining timelines, and technical discussions on proposed and future solutions..",
+								"<span class='important'>Direct contact with the client</span> for planning activities, defining timelines, and technical discussions on proposed and future solutions.",
 								"Technical supervision of a <span class='important'>team of 8-9 people</span>, adhering to the objectives and deadlines agreed upon with the client.",
 								"<span class='important'>Responsible for the web channel</span> as a technical and decision-making point of reference for the client.",
 							],
@@ -157,18 +157,29 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 								'Technical lead and supervisor for the development of the Internet Banking application, built with <span class="important">Angular 16</span> and based on a <span class="important">micro-frontend architecture</span>, including <span class="important">custom libraries</span>.',
 								'Management of <span class="important">branching/versioning strategies</span>, <span class="important">merge requests</span> from external vendors, and release processes via <span class="important">Jenkins</span>.',
 								'<span class="important">Task analysis and planning</span>, <span class="important">resource management</span>, <span class="important">budget estimation</span> and main point of contact for the client regarding the web channel.',
+								'Design and development, as tech lead, of a <span class="important">Design System library based on pure custom Angular components</span>.',
+								'Technical supervision and guidance of <span class="important">internationalization</span> and <span class="important">accessibility</span> activities.',
 							],
 							[Locale.IT]: [
 								"Supervisore e riferimento tecnico per lo sviluppo su applicativo dell'Internet Banking, realizzato in <span class='important'>Angular 16</span> con <span class='important'>architettura a micro-frontend</span>, e sulle principali <span class='important'>librerie custom</span>.",
 								'Gestione delle <span class="important">strategie di branching e di versioning</span>, delle <span class="important">merge request</span> da fornitori esterni e dei rilasci tramite piattaforma <span class="important">Jenkins</span>.',
-								'<span class="important">Analisi e pianificazione delle attività</span>, <span class="important">gestione delle risorse</span>, <span class="important">realizzazione di stime economiche</span> e riferimento per il cliente sul canale web.',
+								'<span class="important">Analisi e pianificazione delle attività</span>, <span class="important">gestione delle risorse</span>, <span class="important">realizzazione di stime economiche</span> e riferimento per il cliente sul web.',
+								'Progettazione e sviluppo, in qualità di tech lead, di una <span class="important">libreria di Design System basata su componenti Angular puri custom</span>.',
+								'Supervisione e indirizzo tecnico delle attività di <span class="important">internazionalizzazione</span> e <span class="important">accessibilità</span>.',
 							],
 						},
 						skillsList: [
 							{
 								starred: true,
 								text: {
-									[Locale.EN]: 'Angular 14, 16',
+									[Locale.EN]: 'Angular 16',
+								},
+								itemType: ItemType.E,
+							},
+							{
+								text: {
+									[Locale.EN]: 'Accessibility (WCAG)',
+									[Locale.IT]: 'Accessibilità (WCAG)',
 								},
 								itemType: ItemType.E,
 							},
@@ -233,21 +244,19 @@ export function getCv(safeDatePipe: SafeDatePipe) {
 						],
 						descriptionsList: {
 							[Locale.EN]: [
-								'Technical lead and supervisor for the development of the Internet Banking application, built with <span class="important">Angular 16</span> and based on a <span class="important">micro-frontend architecture</span>, including <span class="important">custom libraries</span>.',
-								'Management of <span class="important">branching/versioning strategies</span>, <span class="important">merge requests</span> from external vendors, and release processes via <span class="important">Jenkins</span>.',
-								'<span class="important">Task analysis and planning</span>, <span class="important">resource management</span>, <span class="important">budget estimation</span> and main point of contact for the client regarding the web channel.',
+								'Development of functionalities using <span class="important">RxJS</span>, <span class="important">NgRx</span>, <span class="important">Angular Forms</span>, <span class="important">Angular Router</span> (with lazy loading), <span class="important">Module Federation</span> (webpack).',
+								'Management of the <span class="important">Angular version migration</span> from 14 to 16.',
 							],
 							[Locale.IT]: [
-								"Supervisore e riferimento tecnico per lo sviluppo su applicativo dell'Internet Banking, realizzato in <span class='important'>Angular 16</span> con <span class='important'>architettura a micro-frontend</span>, e sulle principali <span class='important'>librerie custom</span>.",
-								'Gestione delle <span class="important">strategie di branching e di versioning</span>, delle <span class="important">merge request</span> da fornitori esterni e dei rilasci tramite piattaforma <span class="important">Jenkins</span>.',
-								'<span class="important">Analisi e pianificazione delle attività</span>, <span class="important">gestione delle risorse</span>, <span class="important">realizzazione di stime economiche</span> e riferimento per il cliente sul canale web.',
+								"Sviluppo di funzionalità interne all'Internet Banking con l'utilizzo di <span class='important'>RxJS</span>, <span class='important'>NgRx</span>, <span class='important'>Angular Forms</span>, <span class='important'>Angular Router</span> (con lazy loading), <span class='important'>Module Federation</span> (webpack).",
+								'Gestione della <span class="important">migrazione della versione di Angular</span> dalla 14 alla 16.',
 							],
 						},
 						skillsList: [
 							{
 								starred: true,
 								text: {
-									[Locale.EN]: 'Angular 11, 14',
+									[Locale.EN]: 'Angular 11, 14, 16',
 								},
 								itemType: ItemType.E,
 							},
